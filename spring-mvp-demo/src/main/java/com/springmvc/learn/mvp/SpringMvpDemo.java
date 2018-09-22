@@ -1,6 +1,6 @@
 package com.springmvc.learn.mvp;
 
-import com.springmvc.learn.mvp.bean.InAnimal;
+import com.springmvc.learn.mvp.bean.IVehicle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,10 +14,10 @@ public class SpringMvpDemo {
 
     protected static void springWarmUp() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring-context.xml");
-        InAnimal tortoise = (InAnimal) applicationContext.getBean("tortoise");
+        IVehicle tortoise = (IVehicle) applicationContext.getBean("tortoise");
         tortoise.run();
 
-        InAnimal rabbit = (InAnimal)applicationContext.getBean("rabbit");
+        IVehicle rabbit = (IVehicle)applicationContext.getBean("rabbit");
         rabbit.run();
     }
 }

@@ -15,9 +15,9 @@ import org.springframework.test.context.junit4.SpringRunner;
  * Unit test for simple App.
  */
 @RunWith(SpringRunner.class)
-@ActiveProfiles(profiles = "fat")
+@ActiveProfiles(profiles = "prd")
 @ContextConfiguration(value = "classpath:spring/spring-context.xml")
-public class AppTest extends TestCase {
+public class AppTest{
 
     @Autowired
     private GenericEnv env;
@@ -30,7 +30,9 @@ public class AppTest extends TestCase {
 
     @Test
     public void testApp() {
-        System.out.println(env);
+        System.out.println(env.getClass().getSimpleName() + ", " + env);
+        System.out.println(datasourceProperties);
+        System.out.println(jmsProperties);
     }
 
 

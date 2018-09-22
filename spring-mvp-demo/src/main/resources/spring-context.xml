@@ -7,11 +7,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="tortoise" class="com.springmvc.learn.mvp.bean.Bike"></bean>
-    <bean id="rabbit" class="com.springmvc.learn.mvp.bean.Car"></bean>
+    <bean id="bike" class="com.springmvc.learn.mvp.bean.Bike"></bean>
+    <bean id="car" class="com.springmvc.learn.mvp.bean.Car"></bean>
 
-    <context:property-placeholder
+<!--    <context:property-placeholder
             location="
-         classpath*:app-${envTarget}.properties"/>
+         classpath*:app-${envTarget}.properties"/>-->
 
 </beans>

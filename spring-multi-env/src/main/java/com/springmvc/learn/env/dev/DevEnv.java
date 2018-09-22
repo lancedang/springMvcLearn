@@ -9,7 +9,7 @@ public class DevEnv implements GenericEnv {
 
     private String name = "devSir";
 
-    @Value("${user.flag}")
+    @Value("${book.flag}")
     private String flag;
 
     public String getName() {
@@ -28,11 +28,11 @@ public class DevEnv implements GenericEnv {
         this.flag = flag;
     }
 
-    @Override
-    public String toString() {
-        return "DevEnv{" +
+
+    public void show() {
+        System.out.println("DevEnv{" +
                 "name='" + name + '\'' +
                 ", flag='" + flag + '\'' +
-                '}';
+                '}');
     }
 }

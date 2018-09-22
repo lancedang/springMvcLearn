@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class PrdEnv implements GenericEnv {
     private String name = "prdSir";
 
-    @Value("${user.flag}")
+    @Value("${book.flag}")
     private String flag;
 
     public String getName() {
@@ -27,11 +27,10 @@ public class PrdEnv implements GenericEnv {
         this.flag = flag;
     }
 
-    @Override
-    public String toString() {
-        return "PrdEnv{" +
+    public void show() {
+        System.out.println("PrdEnv{" +
                 "name='" + name + '\'' +
                 ", flag='" + flag + '\'' +
-                '}';
+                '}');
     }
 }

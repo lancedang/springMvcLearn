@@ -11,7 +11,7 @@
     <context:annotation-config></context:annotation-config>
 
     <!-- scans for annotated classes in the com.company package -->
-    <!--公共的要扫描的类，所有环境都必须-->
+    <!--公共的要扫描的类，所有环境都必须，enable autowire-->
     <context:component-scan base-package="com.springmvc.learn.config"/>
 
     <beans profile="dev">
@@ -36,7 +36,7 @@
 
     <beans profile="uat">
         <context:property-placeholder
-                location="classpath:properties/application-uat.properties, classpath:properties/application-default.properties"
+                location="classpath:properties/application-default.properties, classpath:properties/application-uat.properties"
                 ignore-unresolvable="true"/>
 
         <context:component-scan base-package="com.springmvc.learn.env.uat"/>

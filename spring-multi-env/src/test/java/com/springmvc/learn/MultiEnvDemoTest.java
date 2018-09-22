@@ -12,12 +12,12 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple MultiEnvDemo.
  */
 @RunWith(SpringRunner.class)
-@ActiveProfiles(profiles = "prd")
+@ActiveProfiles(profiles = "uat")
 @ContextConfiguration(value = "classpath:spring/spring-context.xml")
-public class AppTest{
+public class MultiEnvDemoTest {
 
     @Autowired
     private GenericEnv env;
@@ -30,7 +30,7 @@ public class AppTest{
 
     @Test
     public void testApp() {
-        System.out.println(env.getClass().getSimpleName() + ", " + env);
+        env.show();
         System.out.println(datasourceProperties);
         System.out.println(jmsProperties);
     }

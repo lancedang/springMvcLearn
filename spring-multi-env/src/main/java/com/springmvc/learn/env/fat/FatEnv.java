@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class FatEnv implements GenericEnv {
     private String name = "fatSir";
 
-    @Value("${user.flag}")
+    @Value("${book.flag}")
     private String flag;
 
     public String getName() {
@@ -27,11 +27,10 @@ public class FatEnv implements GenericEnv {
         this.flag = flag;
     }
 
-    @Override
-    public String toString() {
-        return "FatEnv{" +
+    public void show() {
+        System.out.println("FatEnv{" +
                 "name='" + name + '\'' +
                 ", flag='" + flag + '\'' +
-                '}';
+                '}');
     }
 }

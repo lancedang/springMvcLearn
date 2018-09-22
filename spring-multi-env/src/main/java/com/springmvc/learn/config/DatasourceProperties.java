@@ -6,33 +6,33 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatasourceProperties {
 
-    @Value("${db.username}")
-    private String username;
+    @Value("${shujuku.master}")
+    private String master;
 
-    @Value("${db.password}")
-    private String password;
+    @Value("${shujuku.mima}")
+    private String mima;
 
-    public String getUsername() {
-        return username;
+    public String getMaster() {
+        return master;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setMaster(String master) {
+        this.master = master;
     }
 
-    public String getPassword() {
-        return password;
+    public String getMima() {
+        return mima;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setMima(String mima) {
+        this.mima = mima;
     }
 
     @Override
     public String toString() {
         return "DatasourceProperties{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
+                "master='" + master + '\'' +
+                ", mima='" + mima + '\'' +
                 '}';
     }
 }

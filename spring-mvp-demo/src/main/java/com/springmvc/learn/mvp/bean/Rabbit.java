@@ -1,4 +1,4 @@
-package com.springmvc.learn.env.bean;
+package com.springmvc.learn.mvp.bean;
 
 public class Rabbit implements InAnimal{
     public void run() {

@@ -1,4 +1,4 @@
-package com.springmvc.learn.env.bean;
+package com.springmvc.learn.mvp.bean;
 
 public interface InAnimal {
     void run();

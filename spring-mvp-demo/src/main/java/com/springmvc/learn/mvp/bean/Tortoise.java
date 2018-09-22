@@ -1,4 +1,4 @@
-package com.springmvc.learn.env.bean;
+package com.springmvc.learn.mvp.bean;
 
 public class Tortoise implements InAnimal{
     public void run() {

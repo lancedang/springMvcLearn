@@ -1,6 +1,6 @@
-package com.springmvc.learn.env;
+package com.springmvc.learn.mvp;
 
-import com.springmvc.learn.env.bean.InAnimal;
+import com.springmvc.learn.mvp.bean.InAnimal;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

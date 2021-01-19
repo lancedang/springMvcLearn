@@ -12,10 +12,6 @@
     <bean id="bike" class="com.springmvc.learn.mvp.bean.Bike"></bean>
     <bean id="car" class="com.springmvc.learn.mvp.bean.Car"></bean>
 
-<!--    <context:property-placeholder
-            location="
-         classpath*:app-${envTarget}.properties"/>-->
-
     <bean id="refreshScheduler" class="com.springmvc.learn.mvp.scheduler.MyRefreshScheduler"></bean>
 
 
